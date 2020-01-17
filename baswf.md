@@ -1,13 +1,11 @@
-bsawf.md
-
 This repository contains the "bullet-proof" 4,000+ lines of source code to the UI of a dice-rolling betting game application.
 
-The code was built while following the <a target="_blank" href="https://courses.nickjanetakis.com/courses/take/build-a-saas-app-with-flask/downloads/2295059-downloading-the-course-s-material">22-hour video course "Build a SaaS (web) Applications with Flask" (and Docker)</a> (bsawf) <a target="_blank" href="https://buildasaasappwithflask.com/">marketed at buildasaasappwithflask.com</a> by full-stack developer <a target="_blank" href="https://www.NickJanetakis.com/uses">NickJanetakis.com</a> (<a target="_blank" href="htttps://twitter.com/nickjanetakis">@nickjanetakis</a>). 
+The code was built while following the 22-hour video course "Build a SaaS (web) Applications with Flask" (and Docker)</a> (bsawf) <a target="_blank" href="https://buildasaasappwithflask.com/">marketed at buildasaasappwithflask.com</a> by full-stack developer <a target="_blank" href="https://www.NickJanetakis.com/uses">NickJanetakis.com</a> (<a target="_blank" href="htttps://twitter.com/nickjanetakis">@nickjanetakis</a>). 
 BTW Nick also created and maintains <a target="_blank" href="https://www.youtube.com/watch?v=XeSD17YRijk&list=PL-v3vdeWVEsXT-u0JDQZnM90feU3NE3v8">a course on Docker</a>
 and a podcast <a target="_blank" href="https://runninginproduction.com">Running in Production</a>.
 Udemy.com?
 
-## See the app with one command
+## The finished app in one command
 
 The latest version of the completed app is at <br />
 <a target="_blank" href="https://github.com/nickjj/build-a-saas-app-with-flask.git">
@@ -29,9 +27,18 @@ Unique to this website is a bash shell script I've written that enables you to r
 
 1. Open a Terminal on your mac, click on it, and keypress command+V to paste.
 
-   The script should open the app in your default browser.   
+   The script should install everything needed, then open the app in your default browser.   
 
    ![snakeeyes-landing-899x355](https://user-images.githubusercontent.com/300046/72588109-3e1ca980-38c5-11ea-965e-a935b8e69498.jpg)
+
+   <pre>e_modules/sass-loader/dist/cjs.js!./app/app.scss 249 KiB {mini-css-extract-plugin} [built]
+webpack_1  |             + 12 hidden modules
+worker_1   | [2020-01-17 04:59:42,036: INFO/Beat] beat: Starting...
+   </pre>
+
+   Press Ctrl+C if you want to stop it.
+
+1. Open another Terminal
 
 
 <hr />
@@ -46,7 +53,7 @@ In the script are comments of what responses looked like.
 
 ### The app
 
-1. Open another Terminal to run <tt>tree</tt>. Here is the result:
+1. Open another Terminal to run <tt>tree</tt> to see all the folders and files to the finished app:
 
    <pre>├── Dockerfile
 ├── LICENSE
@@ -151,38 +158,38 @@ In the script are comments of what responses looked like.
 
 ## Technologies used
 
-Different packages and libraries are mentioned in various files (assets folder), but they are here in <strong>alphabetical order</strong>:
+Different packages and libraries are mentioned in various files (assets folder), but they are listed below in <strong>alphabetical order</strong>:
 
-* Ajax requests
-* Babel
-* Bash script<a target="_blank" href="https://nickjanetakis.com/blog/organize-your-text-based-notes-from-the-command-line-with-this-script">*</a>
-* Bootstrap
-* Celery
-* CSRF Protection
-* distutils.util (in config/settings.py)
-* Docker Compose
-* ES6 JS
-* Flake8 to analyze Python code (in cli/commands/cmd_flake8.py)
-* Flask
-* Flask-Mail
-* Fontawesome
-* Gunicorn
-* Jinga2
-* JSON format files
-* Node
-* PostgreSQL persistant store
-* Pytest package
-* Redis cache
-* Scss
-* SQLAlchemy 
-* Stripe microtransaction payments for subscriptions and coupon detection. It uses RESTFUL APIs.
-* Yarn task runner
-* Webpack (assets/webpack.config.js)
+1. Ajax requests
+1. Babel
+1. Bash script<a target="_blank" href="https://nickjanetakis.com/blog/organize-your-text-based-notes-from-the-command-line-with-this-script">*</a>
+1. Bootstrap
+1. Celery
+1. CSRF Protection
+1. distutils.util (in config/settings.py)
+1. Docker Compose
+1. ES6 JS
+1. Flake8 to analyze Python code (in cli/commands/cmd_flake8.py)
+1. Flask
+1. Flask-Mail to send emails
+1. Fontawesome
+1. Gunicorn
+1. Jinga2
+1. JSON format files
+1. NodeJs
+1. PostgreSQL persistant store
+1. Pytest package
+1. Redis cache
+1. Scss
+1. SQLAlchemy 
+1. Stripe microtransaction payments for subscriptions and coupon detection. It uses RESTFUL APIs.
+1. Yarn task runner
+1. Webpack (assets/webpack.config.js)
 <br /><br />
 
-<a target="_blank" href="https://www.youtube.com/watch?v=Q3arEfQ-pno&list=PL-v3vdeWVEsUDDWYgZ8ImfSORIHyrsBJy">VIDEO playlist:  What Does This Course Cover?</a> 
+## Snakeeyes App Features
 
-## App Features
+<a target="_blank" href="https://www.youtube.com/watch?v=Q3arEfQ-pno&list=PL-v3vdeWVEsUDDWYgZ8ImfSORIHyrsBJy">VIDEO playlist:  What Does This Course Cover?</a> 
 
 <a target="_blank" href="https://www.youtube.com/watch?v=qfXRpkLDZho">VIDEO</a>
 
@@ -205,7 +212,9 @@ Different packages and libraries are mentioned in various files (assets folder),
 
 ## Course
 
-The course's materials promises to show "the real (battle-hardened production) way to do it, without tedious research".
+The course's materials promises to show "the real (battle-hardened production) way (to create the Snakeeyes app), without tedious research".
+
+Once you have paid, visit <a target="_blank" href="https://courses.nickjanetakis.com/courses/take/build-a-saas-app-with-flask/downloads/2295059-downloading-the-course-s-material">Downloading the course materials</a>
 
 * Testing (using Pytest)
 * CLI Script to "help manage your project" in cli/cli.py
@@ -217,22 +226,13 @@ Upgrading a Dockerized Flask App from Python 2.7 to Python 3.7.4</a> August 2019
 30:06
 
 
-## Load
-
-1. In a Terminal, run 
-
-   <pre>e_modules/sass-loader/dist/cjs.js!./app/app.scss 249 KiB {mini-css-extract-plugin} [built]
-webpack_1  |             + 12 hidden modules
-worker_1   | [2020-01-17 04:59:42,036: INFO/Beat] beat: Starting...
-   </pre>
-
-   Press Ctrl+C to stop
-
-1. Open another Terminal
-
 ## Create Another App
 
+If you want to create your own app based on these assets:
+
 1. Change Nick's email in https://github.com/nickjj/build-a-saas-app-with-flask/blob/master/assets/static/502.html
+
+TODO:
 
 ## References
 

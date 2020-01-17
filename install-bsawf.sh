@@ -114,16 +114,18 @@ PUBLIC_IP=$( curl -s ifconfig.me )
 # h2 "STEP 1 - Ensure run variables are based on arguments or defaults ..."
 args_prompt() {
    echo "Bash shell script"
-   echo "USAGE EXAMPLE during testing (minimal inputs using defaults):"
-   #echo "   $0 -u \"John Doe\" -e \"john_doe@a.com\" -v -D"
+   echo "USAGE EXAMPLE during testing:"
+   echo "   $0 -u \"John Doe\" -e \"john_doe@a.com\" -v -U -D -a"
    echo "OPTIONS:"
+   echo "   -v       to run verbose (list space use and each image to console)"
+   echo "   -U       Upgrade packages"
    echo "   -n       GitHub user name"
    echo "   -e       GitHub user email"
-   echo "   -p       Project folder path"
+   echo "   -p \"file\"      Project folder path"
    echo "   -D       Download installer"
    echo "   -R       reboot Docker before run"
-   echo "   -v       to run verbose (list space use and each image to console)"
    echo "   -a       to actually run docker-compose"
+   echo "   -o       to open web page in default browser"
    echo "   -d       to delete files after run (to save disk space)"
  }
 if [ $# -eq 0 ]; then  # display if no paramters are provided:
@@ -140,6 +142,7 @@ exit_abnormal() {                              # Function: Exit with error.
    RUN_ACTUAL=false  # false as dry run is default.
    DOWNLOAD_INSTALL=false     # -d
    RUN_DELETE_AFTER=false     # -D
+   RUN_OPEN_BROWSER=false     # -o
 
 SECRETS_FILEPATH="$HOME/secrets.sh"  # -s
 GitHub_USER_NAME=""                  # -n
@@ -195,6 +198,10 @@ while test $# -gt 0; do
       ;;
     -a)
       export RUN_ACTUAL=true
+      shift
+      ;;
+    -o)
+      export RUN_OPEN_BROWSER=true
       shift
       ;;
     -D)
@@ -313,7 +320,19 @@ fi
    fi
 
 
-# Install docker-compose:
+      if ! command -v docker ; then
+         h2 "Installing docker ..."
+         brew install docker
+      else
+         if [ "${UPDATE_PKGS}" = true ]; then
+            h2 "Upgrading docker ..."
+            brew upgrade docker
+         fi
+      fi
+      note "$( docker --version )"
+         # Docker version 19.03.5, build 633a0ea
+
+
       if ! command -v docker-compose ; then
          h2 "Installing docker-compose ..."
          brew install docker-compose
@@ -356,11 +375,11 @@ fi
          # 52df7a11b666        redis:5.0.7-buster   "docker-entrypoint.s…"   About an hour ago   Up 35 minutes             6379/tcp                 snakeeyes_redis_1
          # 7b8aba1d860a        postgres             "docker-entrypoint.s…"   7 days ago          Up 7 days                 0.0.0.0:5432->5432/tcp   snoodle-postgres
 
-
-if [ "$OS_TYPE" == "macOS" ]; then  # it's on a Mac:
-   open http://localhost:8000/
+if [ "$RUN_OPEN_BROWSER" = true ]; then  # -o
+   if [ "$OS_TYPE" == "macOS" ]; then  # it's on a Mac:
+      open http://localhost:8000/
+   fi
 fi
-
 
 # TODO: Run tests
 
