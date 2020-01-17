@@ -238,10 +238,10 @@ if [ "${DOWNLOAD_INSTALL}" = true ]; then  # -d
    fi
 
    h2 "Downloading repo ..."
-   git clone https://github.com/wilsonmar/build-a-saas-app-with-flask.git "$GitHub_REPO_NAME"   
-   # curl -s -O https://raw.GitHubusercontent.com/wilsonmar/build-a-saas-app-with-flask/master/install-bsawf.sh
-   # in case you want to run on server directly.
+   git clone https://github.com/nickjj/build-a-saas-app-with-flask.git "$GitHub_REPO_NAME"   
    cd "$GitHub_REPO_NAME"
+
+   # curl -s -O https://raw.GitHubusercontent.com/wilsonmar/build-a-saas-app-with-flask/master/install-bsawf.sh
    # git remote add upstream https://github.com/nickjj/build-a-saas-app-with-flask
    # git pull upstream master
 else
