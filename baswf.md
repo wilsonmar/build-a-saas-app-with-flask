@@ -214,16 +214,35 @@ Different packages and libraries are mentioned in various files (assets folder),
 
 The course's materials promises to show "the real (battle-hardened production) way (to create the Snakeeyes app), without tedious research".
 
-Once you have paid, visit <a target="_blank" href="https://courses.nickjanetakis.com/courses/take/build-a-saas-app-with-flask/downloads/2295059-downloading-the-course-s-material">Downloading the course materials</a>
+1. Once you have paid, visit <a target="_blank" href="https://courses.nickjanetakis.com/courses/take/build-a-saas-app-with-flask/downloads/2295059-downloading-the-course-s-material">Downloading the course materials</a>
+1. Unzip
+1. In Finder view the folders unzipped:
 
-* Testing (using Pytest)
-* CLI Script to "help manage your project" in cli/cli.py
-* Web Sockets<a target="_blank" href="https://www.youtube.com/watch?v=5QUv14SQyjw&list=PL-v3vdeWVEsUDDWYgZ8ImfSORIHyrsBJy&index=11">*</a>
+   <pre>06-creating-a-base-flask-app
+07-blueprints-and-jinja-2-templates
+08-testing-and-code-quality
+09-creating-a-cli-script
+10-using-our-first-flask-extension
+11-creating-a-contact-form
+12-creating-a-complete-user-system
+13-creating-a-custom-admin-dashboard
+14-logging-middleware-and-error-handling
+15-quality-of-life-cli-improvements
+16-accepting-recurring-payments
+17-building-the-snake-eyes-game
+18-processing-microtransactions
+19-database-migrations
+20-internationalization-i18n
+   </pre>
 
+1. View the updates video: <a target="_blank" href="https://www.youtube.com/watch?v=Kq_khHWovl4&list=PL-v3vdeWVEsUDDWYgZ8ImfSORIHyrsBJy&index=12">3 Upgrading a Dockerized Flask App from Python 2.7 to Python 3.7.4</a> August 2019. 30:06
 
-<a target="_blank" href="https://www.youtube.com/watch?v=Kq_khHWovl4&list=PL-v3vdeWVEsUDDWYgZ8ImfSORIHyrsBJy&index=12">3
-Upgrading a Dockerized Flask App from Python 2.7 to Python 3.7.4</a> August 2019.
-30:06
+   originally python:2.7-slim from DockerHub
+
+1. Testing (using Pytest)
+1. CLI Script to "help manage your project" in cli/cli.py
+1. Web Sockets<a target="_blank" href="https://www.youtube.com/watch?v=5QUv14SQyjw&list=PL-v3vdeWVEsUDDWYgZ8ImfSORIHyrsBJy&index=11">*</a>
+
 
 
 ## Create Another App
@@ -236,11 +255,7 @@ TODO:
 
 ## References
 
-originally python:2.7-slim from DockerHub
-
 https://www.youtube.com/watch?v=agXtLglF5Lw&list=PL-v3vdeWVEsUDDWYgZ8ImfSORIHyrsBJy&index=10
-
-
 
 https://s3.amazonaws.com/thinkific-import-development/49114/bsawfcoursematerial-191204-142013.zip
 exposed in https://github.com/JohnBobo/bsawf and https://github.com/jademount/bsawf and https://github.com/OprekAbleCom/bsawf-course-material
@@ -263,17 +278,10 @@ exposed in https://github.com/JohnBobo/bsawf and https://github.com/jademount/bs
    * https://github.com/acuencadev/SnakeEyes (archived)
 
 
-https://www.youtube.com/watch?v=5b8OiqQ6NuY&feature=youtu.be
+https://www.youtube.com/watch?v=5b8OiqQ6NuY
 
-unzip
 
-06-creating-a-base-flask-app
-
-docker-compose --build
-    # uses 2.7-alpine
-
-docker-compose stop
-
+## WSL
 
 https://www.youtube.com/watch?v=5gu8wWX3Ob4
 A Productive Linux Development Environment (WSL) on Windows with WSL, Docker, tmux, VSCode and More
@@ -282,6 +290,7 @@ https://www.youtube.com/watch?v=A0eqZujVfYU
 Developing on Windows with WSL2 (Subsystem for Linux), VS Code, Docker, and the Terminal
 by Scott Hanselman
 
+## Testing
 
-https://www.youtube.com/watch?v=_ffYmnbm_wg
-Live Demo: How to Begin Writing Tests in an Untested Code Base
+<a target="_blank" href="https://www.youtube.com/watch?v=_ffYmnbm_wg">
+Live Demo: How to Begin Writing Tests in an Untested Code Base</a>
