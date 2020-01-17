@@ -2,13 +2,14 @@ bsawf.md
 
 This repository contains the "bullet-proof" 4,000+ lines of source code to the UI of a dice-rolling betting game application.
 
-The code was built while following <a target="_blank" href="https://buildasaasappwithflask.com/">Build a SaaS (web) Applications with Flask (and Docker)</a> (bsawf) 22-hour video course by full-stack developer <a target="_blank" href="https://www.NickJanetakis.com/uses">NickJanetakis.com</a> (<a target="_blank" href="htttps://twitter.com/nickjanetakis">@nickjanetakis</a>). <a target="_blank" href="https://www.youtube.com/watch?v=Q3arEfQ-pno&list=PL-v3vdeWVEsUDDWYgZ8ImfSORIHyrsBJy">VIDEO playlist</a>. BTW Nick also created and maintains <a target="_blank" href="https://www.youtube.com/watch?v=XeSD17YRijk&list=PL-v3vdeWVEsXT-u0JDQZnM90feU3NE3v8">a course on Docker</a>
+The code was built while following the <a target="_blank" href="https://courses.nickjanetakis.com/courses/take/build-a-saas-app-with-flask/downloads/2295059-downloading-the-course-s-material">22-hour video course "Build a SaaS (web) Applications with Flask" (and Docker)</a> (bsawf) <a target="_blank" href="https://buildasaasappwithflask.com/">marketed at buildasaasappwithflask.com</a> by full-stack developer <a target="_blank" href="https://www.NickJanetakis.com/uses">NickJanetakis.com</a> (<a target="_blank" href="htttps://twitter.com/nickjanetakis">@nickjanetakis</a>). 
+BTW Nick also created and maintains <a target="_blank" href="https://www.youtube.com/watch?v=XeSD17YRijk&list=PL-v3vdeWVEsXT-u0JDQZnM90feU3NE3v8">a course on Docker</a>
 and a podcast <a target="_blank" href="https://runninginproduction.com">Running in Production</a>.
 Udemy.com?
 
 ## See the app with one command
 
-The latest version of the completed app is at 
+The latest version of the completed app is at <br />
 <a target="_blank" href="https://github.com/nickjj/build-a-saas-app-with-flask.git">
 https://github.com/nickjj/build-a-saas-app-with-flask.git</a>
 
@@ -16,14 +17,14 @@ Unique to this website is a bash shell script I've written that enables you to r
 
 1. View my script at:
 
-   <pre><strong><a target="_blank" href="https://github.com/nickjj/build-a-saas-app-with-flask/blob/master/install-bsawf.sh">https://github.com/nickjj/build-a-saas-app-with-flask/blob/master/install-bsawf.sh</a>
+   <pre><strong><a target="_blank" href="https://github.com/wilsonmar/build-a-saas-app-with-flask/blob/master/install-bsawf.sh">https://github.com/wilsonmar/build-a-saas-app-with-flask/blob/master/install-bsawf.sh</a>
    </strong></pre>
 
    This script is explained in the <a href="#ScriptExplained">section below</a>. 
 
 1. Execute the script yourself by <strong>triple-clicking</strong> this command below:
 
-   <pre><strong>bash -c "$(curl -fsSL https://raw.GitHubusercontent.com/nickjj/build-a-saas-app-with-flask/master/install-bsawf.sh)" -d -a -v 
+   <pre><strong>bash -c "$(curl -fsSL https://raw.GitHubusercontent.com/wilsonmar/build-a-saas-app-with-flask/master/install-bsawf.sh)" -d -a -v 
    </strong></pre>
 
 1. Open a Terminal on your mac, click on it, and keypress command+V to paste.
@@ -47,8 +48,7 @@ In the script are comments of what responses looked like.
 
 1. Open another Terminal to run <tt>tree</tt>. Here is the result:
 
-   <pre>
-├── Dockerfile
+   <pre>├── Dockerfile
 ├── LICENSE
 ├── README.md
 ├── SnakeEyes_CLI.egg-info
@@ -180,6 +180,7 @@ Different packages and libraries are mentioned in various files (assets folder),
 * Webpack (assets/webpack.config.js)
 <br /><br />
 
+<a target="_blank" href="https://www.youtube.com/watch?v=Q3arEfQ-pno&list=PL-v3vdeWVEsUDDWYgZ8ImfSORIHyrsBJy">VIDEO playlist:  What Does This Course Cover?</a> 
 
 ## App Features
 
@@ -240,7 +241,7 @@ originally python:2.7-slim from DockerHub
 https://www.youtube.com/watch?v=agXtLglF5Lw&list=PL-v3vdeWVEsUDDWYgZ8ImfSORIHyrsBJy&index=10
 
 
-https://courses.nickjanetakis.com/courses/take/build-a-saas-app-with-flask/downloads/2295059-downloading-the-course-s-material
+
 https://s3.amazonaws.com/thinkific-import-development/49114/bsawfcoursematerial-191204-142013.zip
 exposed in https://github.com/JohnBobo/bsawf and https://github.com/jademount/bsawf and https://github.com/OprekAbleCom/bsawf-course-material
 
